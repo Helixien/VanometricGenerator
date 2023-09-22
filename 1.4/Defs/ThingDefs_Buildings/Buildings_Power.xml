@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Vanometric Generator ====================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RM_VanometricGenerator</defName>
+		<label>vanometric generator</label>
+		<description>A jury-rigged housing for a vanometric mechanoid cell, cobbled together for the highest power output possible. Due to the haphazard nature of the construction, it generates excessive amounts of heat into the surrounding area.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Power/VanometricGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<castEdgeShadows>true</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<pathCost>120</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<blockWind>false</blockWind>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>6500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<size>(5,5)</size>
+		<costList>
+			<Steel>225</Steel>
+			<Plasteel>125</Plasteel>
+			<RM_VanometricMechanoidCell>1</RM_VanometricMechanoidCell>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>-5000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Glower">
+				<compClass>CompGlower</compClass>
+				<glowRadius>3</glowRadius>
+				<glowColor>(242,246,198,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>25</heatPerSecond>
+				<heatPushMaxTemperature>360</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.50</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>RM_VanometricGenerator</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Spacer</techLevel>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+	</ThingDef>
+</Defs>

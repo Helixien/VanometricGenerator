@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Power Output ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
+		<label>Tweak power output</label>
+		<tooltip>Adjust how much power the vanometric generator provides. Default: -5000 (yes, minus is correct)</tooltip>
+		<id>RM_VanometricGeneratorPower</id>
+		<category>RM_VanometricGenerator</category>
+		<order>1</order>
+		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+		<range>0~-50000</range>
+		<defaultValue>-5000</defaultValue>
+	</Operation>
+	<!-- ================ Heat Output ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
+		<label>Tweak heat output</label>
+		<tooltip>Adjust how much heat the vanometric generator pushes out. Default: 25 heat/second</tooltip>
+		<id>RM_VanometricGeneratorHeat</id>
+		<category>RM_VanometricGenerator</category>
+		<order>2</order>
+		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPerSecond</xpath>
+		<range>0~100</range>
+		<defaultValue>25</defaultValue>
+	</Operation>
+	<!-- ================ Cell Value ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
+		<label>Tweak cell trade value</label>
+		<tooltip>Adjust the trade value for the power cell. Default: 2000</tooltip>
+		<id>RM_VanometricCellValue</id>
+		<category>RM_VanometricGenerator</category>
+		<order>3</order>
+		<xpath>Defs/ThingDef[defName="RM_VanometricMechanoidCell"]/statBases/MarketValue</xpath>
+		<range>0~5000</range>
+		<defaultValue>2000</defaultValue>
+	</Operation>
+</Patch>

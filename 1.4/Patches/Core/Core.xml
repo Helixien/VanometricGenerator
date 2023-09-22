@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="CrashedShipPartBase"]/killedLeavings</xpath>
+				<value>
+					<RM_VanometricMechanoidCell>1</RM_VanometricMechanoidCell>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

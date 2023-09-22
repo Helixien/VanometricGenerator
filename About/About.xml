@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Vanometric Generator</name>
+	<author>Helixien</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<url/>
+	<modVersion>1.1-Endless-rev1</modVersion>
+	<packageId>hlx.VanometricGenerator</packageId>
+	<description>text.todo</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>hlx.ReinforcedMechanoids2</li>
+	</loadAfter>
+</ModMetaData>

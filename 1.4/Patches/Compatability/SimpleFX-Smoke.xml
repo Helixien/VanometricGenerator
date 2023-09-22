@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================================ Adds smoke effect to the vanometric generator ====================== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Simple FX: Smoke</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="RM_VanometricGenerator"]/comps</xpath>
+					<value>
+						<li Class="Flecker.CompProperties_Smoker">
+							<particleOffset>(-0.5,0,-0.5)</particleOffset>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

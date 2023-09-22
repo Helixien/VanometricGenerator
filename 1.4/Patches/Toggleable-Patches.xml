@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================================ Toggle Cell Quest ====================== -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>False</defaultValue>
+		<label>Disable power cell as quest reward</label>
+		<tooltip>Disable the spawning of the power cell as quest rewards.</tooltip>
+		<id>RM_VanometricCellQuest</id>
+		<category>RM_VanometricGenerator</category>
+		<order>4</order>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "RM_VanometricMechanoidCell"]/thingSetMakerTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ================================ Toggle Cell Quest ====================== -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>False</defaultValue>
+		<label>Disable power cell from traders</label>
+		<tooltip>Disable the spawning of the power cell for traders.</tooltip>
+		<id>RM_VanometricCellTrader</id>
+		<category>RM_VanometricGenerator</category>
+		<order>5</order>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "RM_VanometricMechanoidCell"]/tradeTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

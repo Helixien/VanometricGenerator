@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="WeatherController" or defName="ClimateAdjuster" or defName="SunBlocker" or defName="SmokeSpewer" or defName="ToxicSpewer" or defName="EMIDynamo"]</xpath>
+					<value>
+						<killedLeavings>
+							<RM_VanometricMechanoidCell>1</RM_VanometricMechanoidCell>
+						</killedLeavings>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd" MayRequire="OskarPotocki.VFE.Mechanoid">
+					<xpath>/Defs/ThingDef[defName="VFE_ClimateAdjuster"]/killedLeavings</xpath>
+					<value>
+						<RM_VanometricMechanoidCell>1</RM_VanometricMechanoidCell>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

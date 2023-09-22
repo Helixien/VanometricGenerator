@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AncientExostriderRemains"]/killedLeavings</xpath>
+					<value>
+						<RM_VanometricMechanoidCell>1</RM_VanometricMechanoidCell>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

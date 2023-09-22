@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================================ Vanometric Mechanoid Cell ====================== -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RM_VanometricMechanoidCell</defName>
+		<label>vanometric mechanoid cell</label>
+		<description>A powerful, compacted vanometric power cell designed to be integrated into mechanoid structures. While highly unstable and relatively useless by itself, if properly housed it could output a considerable amount of power.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/VanometricMechanoidCell</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Mass>7.5</Mass>
+			<MarketValue>2000</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<stackLimit>5</stackLimit>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+				<wickTicks>90~350</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
