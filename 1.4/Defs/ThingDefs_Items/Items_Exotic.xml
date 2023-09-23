@@ -17,7 +17,7 @@
 		<statBases>
 			<Mass>7.5</Mass>
 			<MarketValue>2000</MarketValue>
-			<MaxHitPoints>1000</MaxHitPoints>
+			<MaxHitPoints>75</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
 		<thingCategories>
