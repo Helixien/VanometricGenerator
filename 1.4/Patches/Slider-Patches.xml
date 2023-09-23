@@ -6,7 +6,7 @@
 		<tooltip>Adjust how much power the vanometric generator provides. Default: -5000 (yes, minus is correct)</tooltip>
 		<id>RM_VanometricGeneratorPower</id>
 		<category>RM_VanometricGenerator</category>
-		<order>1</order>
+		<order>10</order>
 		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
 		<range>0~-50000</range>
 		<defaultValue>-5000</defaultValue>
@@ -17,10 +17,21 @@
 		<tooltip>Adjust how much heat the vanometric generator pushes out. Default: 25 heat/second</tooltip>
 		<id>RM_VanometricGeneratorHeat</id>
 		<category>RM_VanometricGenerator</category>
-		<order>2</order>
+		<order>20</order>
 		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPerSecond</xpath>
 		<range>0~100</range>
 		<defaultValue>25</defaultValue>
+	</Operation>
+	<!-- ================ Heat Output Limit================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
+		<label>Tweak heat output limit</label>
+		<tooltip>Adjust how much heat the vanometric generator can push out total. Meaning in a closed room, it will push out heat until the room temperature reaches that exact number. Default: 360°C</tooltip>
+		<id>RM_VanometricGeneratorHeat</id>
+		<category>RM_VanometricGenerator</category>
+		<order>20</order>
+		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPushMaxTemperature</xpath>
+		<range>0~100</range>
+		<defaultValue>360</defaultValue>
 	</Operation>
 	<!-- ================ Cell Value ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
@@ -28,7 +39,7 @@
 		<tooltip>Adjust the trade value for the power cell. Default: 2000</tooltip>
 		<id>RM_VanometricCellValue</id>
 		<category>RM_VanometricGenerator</category>
-		<order>3</order>
+		<order>30</order>
 		<xpath>Defs/ThingDef[defName="RM_VanometricMechanoidCell"]/statBases/MarketValue</xpath>
 		<range>0~5000</range>
 		<defaultValue>2000</defaultValue>

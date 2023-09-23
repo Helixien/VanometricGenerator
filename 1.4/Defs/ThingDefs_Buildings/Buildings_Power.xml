@@ -24,8 +24,8 @@
 		<blockLight>false</blockLight>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>6500</WorkToBuild>
-			<Flammability>1.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Flammability>0.5</Flammability>
 			<Beauty>-20</Beauty>
 		</statBases>
 		<size>(5,5)</size>
@@ -59,7 +59,7 @@
 		<researchPrerequisites>
 			<li>RM_VanometricGenerator</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<tradeability>Sellable</tradeability>
 		<techLevel>Spacer</techLevel>
 		<building>
