@@ -26,7 +26,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
 		<label>Tweak heat output limit</label>
 		<tooltip>Adjust how much heat the vanometric generator can push out total. Meaning in a closed room, it will push out heat until the room temperature reaches that exact number. Default: 360°C</tooltip>
-		<id>RM_VanometricGeneratorHeat</id>
+		<id>RM_VanometricGeneratorHeatLimit</id>
 		<category>RM_VanometricGenerator</category>
 		<order>20</order>
 		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPushMaxTemperature</xpath>
