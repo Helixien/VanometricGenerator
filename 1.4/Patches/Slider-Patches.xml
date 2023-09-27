@@ -8,7 +8,7 @@
 		<category>RM_VanometricGenerator</category>
 		<order>10</order>
 		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
-		<range>0~-50000</range>
+		<range>0~-25000</range>
 		<defaultValue>-5000</defaultValue>
 	</Operation>
 	<!-- ================ Heat Output ================ -->
