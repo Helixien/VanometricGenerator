@@ -6,13 +6,21 @@
 		<li>1.4</li>
 	</supportedVersions>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=3041187151</url>
-	<modVersion>1.1-Sheev-rev1</modVersion>
+	<modVersion>1.1-Sheev-rev2</modVersion>
 	<packageId>hlx.VanometricGenerator</packageId>
 	<description>“Vanometric Generator” is a standalone and improved version of the one found in “Reinforced Mechanoids 2”. It allows the player to trade and find mechanoid power cells which can be jury-rigged into a vanometric generator. It generates a lot of power, but at the same time generates a lot of heat.
 
 It is heavily based on an old time favourite mod of mine, ”Mechanoid Power” which was first made by Skullywag, then Trunken and finally a version of it is currently maintained by Mlie. My version however does not use any assets or code from that mod, it was remade from scratch.
 
 Every aspect of it was made to fit into Rimworld perfectly. From the artstyle, do the way it works. For people who disagree with my balancing, the mod includes extensive mod options to tweak it to your liking!</description>
+	<modDependencies>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
